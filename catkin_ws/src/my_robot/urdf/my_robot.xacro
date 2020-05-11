@@ -122,6 +122,12 @@
     </visual>
 
   </link>
+<gazebo reference="left_wheel">
+  <material>Gazebo/Blue</material>
+</gazebo>
+<gazebo reference="right_wheel">
+  <material>Gazebo/Red</material>
+</gazebo>
 <joint type="continuous" name="left_wheel_hinge">
     <origin xyz="0 0.15 0" rpy="0 0 0" />
     <child link="left_wheel" />
@@ -204,5 +210,10 @@
     <parent link="chassis" />
     <axis xyz="0 1 0"/>
 </joint>
+
+
+
+
+
 
 </robot>
